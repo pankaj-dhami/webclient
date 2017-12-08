@@ -1,4 +1,5 @@
-﻿using System.ServiceModel;
+﻿using System.Collections.Generic;
+using System.ServiceModel;
 
 namespace HelloService
 {
@@ -9,5 +10,7 @@ namespace HelloService
         Employee GetEmployee(int id);
         [OperationContract]
         void SaveEmployee(Employee employee);
+        [OperationContract]
+        IEnumerable<Employee> GetAllEmployees();
     }
 }
