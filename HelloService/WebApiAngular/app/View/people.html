@@ -1,0 +1,31 @@
+﻿<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Height (cm)</th>
+                <th>Hair Colour</th>
+                <th>Skin Colour</th>
+                <th>Eye Colour</th>
+                <th>Gender</th>
+                <th>Birth Year</th>
+                <th>Home World</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="people in peoples" >
+                <td>{{people.name}}</td>
+                <td>{{people.height}}</td>
+                <td>{{people.mass}}</td>
+                <td>{{people.hair_color}}</td>
+                <td>{{people.skin_color}}</td>
+                <td>{{people.eye_color}}</td>
+                <td>{{people.gender}}</td>
+                <td>{{people.birth_year}}</td>
+                <td>{{people.homeworld}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
