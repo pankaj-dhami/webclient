@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceHost", "HelloSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisStorage", "RedisStorage\RedisStorage.csproj", "{BFE8B4DB-4A8E-45F3-8044-67147A628C60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAngular", "WebAngular\WebAngular.csproj", "{B10BD828-24F9-41A2-8EC8-200789046C81}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAngular", "WebApiAngular\WebApiAngular.csproj", "{AE084270-28C2-4AD8-B06B-17D426EC82A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{57AD1539-CF95-4963-98C2-AC24915A5883}"
@@ -33,10 +31,6 @@ Global
 		{BFE8B4DB-4A8E-45F3-8044-67147A628C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFE8B4DB-4A8E-45F3-8044-67147A628C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFE8B4DB-4A8E-45F3-8044-67147A628C60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B10BD828-24F9-41A2-8EC8-200789046C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B10BD828-24F9-41A2-8EC8-200789046C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B10BD828-24F9-41A2-8EC8-200789046C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B10BD828-24F9-41A2-8EC8-200789046C81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE084270-28C2-4AD8-B06B-17D426EC82A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE084270-28C2-4AD8-B06B-17D426EC82A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE084270-28C2-4AD8-B06B-17D426EC82A3}.Release|Any CPU.ActiveCfg = Release|Any CPU

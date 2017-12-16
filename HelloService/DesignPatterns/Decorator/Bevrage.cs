@@ -58,7 +58,7 @@ namespace DesignPatterns.Decorator
         public MainEntryPoint()
         {
             Bevrage bevrage =
-                //new Soy(new Caramel(new Espresso()));
+                new Soy(new Caramel(new Espresso()));
                 new Caramel(new Espresso());
             Console.WriteLine(bevrage.Cost());
         }
