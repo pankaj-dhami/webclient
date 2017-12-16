@@ -7,7 +7,9 @@ namespace HelloService
     public interface IEmployeeService
     {
         [OperationContract]
-        Employee GetEmployee(int id);
+        Employee GetEmployee(EmployeeRequest id);
+        [OperationContract]
+        Employee GetEmployeeType(EmployeeRequest typeId);
         [OperationContract]
         void SaveEmployee(Employee employee);
         [OperationContract]

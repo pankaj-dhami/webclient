@@ -12,7 +12,7 @@ namespace HelloService
         }
 
         IList<Employee> _employees = new List<Employee>();
-        public Employee GetEmployee(int id)
+        public Employee GetEmployee(EmployeeRequest id)
         {
             return cacheAdapter.Get<Employee>(id.ToString());
         }
@@ -23,7 +23,20 @@ namespace HelloService
 
         public IEnumerable<Employee> GetAllEmployees()
         {
-          return cacheAdapter.GetAll<Employee>();
+            return cacheAdapter.GetAll<Employee>();
+        }
+
+        public Employee GetEmployeeType(EmployeeRequest request)
+        {
+            if (request.TypeId == 1)
+            {
+                return new FullTimeEmployee { Id = 1, AnnualSalary = 1000 };
+            }
+            else
+            {
+                return new PartTimeEmployee { Id = 2, HourlyPay = 10 };
+            }
+            return null;
         }
     }
 }
