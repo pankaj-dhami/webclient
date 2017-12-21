@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DesignPatterns.Observable;
 using DesignPatterns.Decorator;
+using System.IO;
 
 namespace DesignPatterns
 {
@@ -21,8 +22,9 @@ namespace DesignPatterns
             //weatherStation.Notify();
 
             //decorator pattern
-            MainEntryPoint mainEntryPoint = new MainEntryPoint();
+            // MainEntryPoint mainEntryPoint = new MainEntryPoint();
 
+            PossibleSubStrings ps = new PossibleSubStrings();
             Console.Read();
         }
     }
