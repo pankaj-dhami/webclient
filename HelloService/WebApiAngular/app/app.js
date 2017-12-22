@@ -1,6 +1,6 @@
 ﻿//https://swapi.co/api/
 // http://www.tothenew.com/blog/angularjs-deferred-promises-basic-understanding/
-
+//https://gist.github.com/demisx/9605099 
 (function () {
     var app = angular.module("myApp", ["ngRoute"]);
     app.config(function ($routeProvider, $locationProvider) {

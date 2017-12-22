@@ -57,11 +57,25 @@ namespace DesignPatterns.Decorator
     {
         public MainEntryPoint()
         {
-            Bevrage bevrage =
-                new Soy(new Caramel(new Espresso()));
-                new Caramel(new Espresso());
-            Console.WriteLine(bevrage.Cost());
+            //Bevrage bevrage =
+            //    new Soy(new Caramel(new Espresso()));
+            //new Caramel(new Espresso());
+            //Console.WriteLine(bevrage.Cost());
+
+            A a1 = new A();
+            A a2 = new A();
+
+            var equal = a1.GetHashCode() == a2.GetHashCode();
         }
     }
 
+    public class A
+    {
+        private static int i;
+        static A()
+        {
+            i = 1;
+        }
+
+    }
 }
