@@ -3,10 +3,10 @@ using System.ServiceModel;
 
 namespace HelloService
 {
-    [MessageContract]
+    [DataContract]
     public class FullTimeEmployee : Employee
     {
-        [MessageBodyMember]
+        [DataMember]
         public int AnnualSalary { get; set; }
     }
 }

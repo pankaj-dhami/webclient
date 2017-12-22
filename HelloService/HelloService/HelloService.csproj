@@ -47,10 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorService.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeService.cs" />
     <Compile Include="FullTimeEmployee.cs" />
+    <Compile Include="GlobalErrorHandler.cs" />
+    <Compile Include="GlobalErrorHandlerBehaviourAttribute.cs" />
     <Compile Include="HelloService.cs" />
+    <Compile Include="ICalculatorService.cs" />
     <Compile Include="IEmployeeService.cs" />
     <Compile Include="IHelloService.cs" />
     <Compile Include="PartTimeEmployee.cs" />
