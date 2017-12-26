@@ -6,27 +6,27 @@ namespace HelloService
 {
     [KnownType(typeof(FullTimeEmployee))]
     [KnownType(typeof(PartTimeEmployee))]
-    [MessageContract]
+    [DataContract]
     public class Employee
     {
-        [MessageHeader]
+        [DataMember]
         public int Id { get; set; }
-        [MessageBodyMember]
+        [DataMember]
         public string Name { get; set; }
-        [MessageBodyMember]
+        [DataMember]
         public string Gender { get; set; }
-        [MessageBodyMember]
+        [DataMember]
         public DateTime DateOfBirth { get; set; }
-        [MessageBodyMember]
+        [DataMember]
         public int EmployeeType { get; set; }
     }
 
-    [MessageContract]
+    [DataContract]
     public class EmployeeRequest
     {
-        [MessageHeader]
+        [DataMember]
         public int Id { get; set; }
-        [MessageHeader]
+        [DataMember]
         public int TypeId { get; set; }
     }
 }

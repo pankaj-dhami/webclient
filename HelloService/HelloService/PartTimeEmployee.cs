@@ -1,11 +1,12 @@
-﻿using System.ServiceModel;
+﻿using System.Runtime.Serialization;
+using System.ServiceModel;
 
 namespace HelloService
 {
-    [MessageContract]
+    [DataContract]
     public class PartTimeEmployee : Employee
     {
-        [MessageBodyMember]
+        [DataMember]
         public int HourlyPay { get; set; }
     }
 }
